@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Home from './../web/home/Home';
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Categories from './../web/categories/Categories';
-import DashboardLayout from './../layouts/dashboardLayout';
+
 import DashboardHome from './../dashboard/home/Home.jsx'
 import DashboardCategories from './../dashboard/categories/Categories.jsx'
 import Register from './../web/register/register.jsx';
@@ -16,6 +16,7 @@ import ProtectedRoute from './protectedRoute/protectedRoute.jsx';
 import User from './user/User.jsx';
 import ForgetPassword from './forgetpassword/ForgetPassword.jsx';
 import SendCode from './sendCode/SendCode.jsx';
+import DashboardLayout from './../layouts/DashboardLayout';
 
 
 
