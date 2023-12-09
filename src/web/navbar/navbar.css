@@ -1,0 +1,19 @@
+.navbarProfile{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.cardNum{
+    background: red;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    left: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:7px
+}

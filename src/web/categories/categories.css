@@ -1,0 +1,15 @@
+img{
+    height: 100px;
+    width: 80px;
+}
+.swiper-button-prev,.swiper-button-next{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: #000;
+    background: #fff;
+   
+}
+.swiper-button-prev:after,.swiper-button-next:after{
+    font-size: 20px;
+}

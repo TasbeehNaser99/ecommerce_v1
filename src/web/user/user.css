@@ -1,0 +1,15 @@
+.userProfile{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+.name{
+    color: red;
+}
+.username{
+    border: 1px solid #000;
+    width: fit-content;
+    padding-inline:10px ;
+    border-radius: 10px;
+}
