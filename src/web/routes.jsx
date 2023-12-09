@@ -1,18 +1,18 @@
 import { useEffect, useState } from 'react'
-import Home from './../web/home/Home';
+import Home from './home/Home.jsx';
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
-import Categories from './../web/categories/Categories';
+import Categories from './categories/Categories';
 
 import DashboardHome from './../dashboard/home/Home.jsx'
 import DashboardCategories from './../dashboard/categories/Categories.jsx'
-import Register from './../web/register/register.jsx';
-import Login from './../web/login/login.jsx';
+import Register from './register/Register.jsx';
+import Login from './login/Login.jsx';
 import { jwtDecode } from 'jwt-decode';
-import CategoriesDetails from './../web/categories/CategoriesDetails.jsx';
-import Products from './../web/products/Products.jsx';
-import Cart from './../web/cart/CART.JSX';
-import WebLayout from './../layouts/WebLayout';
-import ProtectedRoute from './protectedRoute/protectedRoute.jsx';
+import CategoriesDetails from './categories/CategoriesDetails.jsx';
+import Products from './products/Products.jsx';
+import Cart from './cart/Cart.jsx';
+import WebLayout from './../layouts/WebLayout.jsx';
+import ProtectedRoute from './protectedRoute/ProtectedRoute.jsx';
 import User from './user/User.jsx';
 import ForgetPassword from './forgetpassword/ForgetPassword.jsx';
 import SendCode from './sendCode/SendCode.jsx';
