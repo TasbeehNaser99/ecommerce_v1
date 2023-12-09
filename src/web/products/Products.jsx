@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom'
 
@@ -12,12 +12,14 @@ function Products() {
        return res;
   }
      
-
+ let[isLoading,setLoading]=useState(true)
     const getProduct = async()=>{
      const {data} = await axios.get(`${import.meta.env.VITE_API_URL}/products/${productId}`);
-    return data.product ;
+     setLoading(false);
+     return data.product ;
+   
     }
- const {data,isLoading}=useQuery('category_details',getProduct);
+ const {data}=useQuery('category_details',getProduct);
 
 if (isLoading){
   return(
@@ -30,7 +32,7 @@ if (isLoading){
         
        
         {data.subImages.map((img,index)=>
-        <div className='col-lg-4'>
+        <div className='col-lg-4 ' key={index}>
         <img src={img.secure_url}/>
         </div>
     )
