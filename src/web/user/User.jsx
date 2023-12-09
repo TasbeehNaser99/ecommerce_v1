@@ -2,7 +2,12 @@ import React, { useContext } from 'react'
 import { UserContext } from '../context/User';
 import './user.css'
 function User() {
-    let {userData} = useContext(UserContext);
+    let {userData,loader} = useContext(UserContext);
+    if(loader){
+      return (
+        <h2>Loading...</h2>
+      )
+    }
   return (
     <div className='container mt-5'>
       
