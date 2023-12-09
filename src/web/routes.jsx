@@ -16,7 +16,7 @@ import ProtectedRoute from './protectedRoute/protectedRoute.jsx';
 import User from './user/User.jsx';
 import ForgetPassword from './forgetpassword/ForgetPassword.jsx';
 import SendCode from './sendCode/SendCode.jsx';
-import DashboardLayout from './../layouts/DashboardLayout';
+import DashboardLayout from './../layouts/DashboardLayout.jsx';
 
 
 
