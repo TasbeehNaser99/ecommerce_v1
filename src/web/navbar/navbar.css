@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .navbarProfile{
     width: 45px;
     height: 45px;
     border-radius: 10px;
     margin-right: 10px;
+}
+.navbar-brand{
+    font-family: 'Pacifico';
+}
+.w-15{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    left:10%;
+    top: 0;
 }
 .cardNum{
     background: red;
@@ -16,4 +29,41 @@
     justify-content: center;
     align-items: center;
     top:7px
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+.navIcon{
+    height: 40px;
+    width: 40px; 
+}
+.navIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.spanav{
+    font-size: 10px;
+   font-family: 'Sonsie One';
+   font-weight: bolder;
+    
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s1{
+    margin-left: 10px;
+}
+.navbar{
+    background-color: transparent;
 }

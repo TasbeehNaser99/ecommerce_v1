@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import Home from './home/Home.jsx';
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Categories from './categories/Categories';
-
 import DashboardHome from './../dashboard/home/Home.jsx'
 import DashboardCategories from './../dashboard/categories/Categories.jsx'
 import Register from './register/Register.jsx';
@@ -17,6 +16,10 @@ import User from './user/User.jsx';
 import ForgetPassword from './forgetpassword/ForgetPassword.jsx';
 import SendCode from './sendCode/SendCode.jsx';
 import DashboardLayout from './../layouts/DashboardLayout.jsx';
+import Order from './order/Order.jsx';
+import UserInfo from './user/UserInfo.jsx';
+import UserContact from './user/UserContact.jsx';
+import UserOrders from './user/UserOrders';
 
 
 
@@ -38,12 +41,33 @@ export const router = createBrowserRouter([
         {
             path:"profile",
             element:
+            <ProtectedRoute>
             <User/>
+            </ProtectedRoute>,
+            children:[
+              {
+                path:"info",
+               element: <UserInfo/>
+              },
+              {
+                path:'contact',
+                element:<UserContact/>
+              },
+              {
+                path:'getorder',
+                element:<UserOrders/>
+              },
+            ]
           },
           {
             path:"forgetpasswoed",
             element:
             <ForgetPassword/>
+          },
+          {
+            path:"order",
+            element:
+            <Order/>
           },
           {
             path:"sendCode",

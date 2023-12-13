@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useContext, useState } from 'react'
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom'
-
+import './product.css'
 import { CartContext } from '../context/Cart';
 function Products() {
     const{productId}=useParams();
@@ -23,7 +23,10 @@ function Products() {
 
 if (isLoading){
   return(
+   
     <h1>Loading...</h1>
+    
+   
   )
 }
   return (

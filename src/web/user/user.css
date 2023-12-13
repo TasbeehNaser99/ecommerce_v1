@@ -13,3 +13,36 @@
     padding-inline:10px ;
     border-radius: 10px;
 }
+.imgBar{
+    height: 30px;
+    width: 30px;
+}
+.profile {
+    display: flex;
+    gap: 40px;
+    height: 90vh;
+}
+.profileLinks {
+    background-color: rgb(112, 204, 244);
+    height: calc(100vh-65px);
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+.profileLinks nav a{
+    color: #fff !important;
+    text-decoration: none;
+    
+}
+.profileLinks nav a img{
+    margin-right: 10px;
+}
+.profileLinks nav{
+   
+    margin-left: 30px;
+    margin-top: 50px;
+   width: 200px;
+    display: flex;
+   
+    flex-direction: column;
+    gap: 60px;
+}

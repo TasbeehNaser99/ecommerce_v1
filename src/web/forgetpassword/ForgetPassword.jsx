@@ -1,10 +1,11 @@
-
   import React, { useContext } from 'react'
   import Input from '../../shared/Input.jsx'
   import { useFormik } from 'formik'
   import { forgetSchema } from '../validation/validation.js';
   import axios from 'axios';
   import {  useNavigate } from 'react-router-dom';
+  import './forgetPassword.css'
+  // import './../login/login.css'
   function ForgetPassword() {
     const navigate=useNavigate();
       const initialValues={
@@ -66,14 +67,16 @@
   ));
     return (
      <>
-     <div className='container'>
-      <h2>Forget Password</h2>
+     <div className='bg-cover'>
+     <div className='container login-container  w-50  rounded-3 mx-3'>
+     <div className='forgetPassword-cart'>
+      <h2 className='login-h2 text-center'>Forget Password</h2>
       <form onSubmit={formik.handleSubmit}>
       {renderInput}
-      <button type='submit' onClick={()=>onSubmit(formik.values)}>submit</button>
-   
+      <button type='submit' className='submit' onClick={()=>onSubmit(formik.values)}>submit</button>
       </form>
-      
+      </div> 
+     </div>
      </div>
      </> 
     )

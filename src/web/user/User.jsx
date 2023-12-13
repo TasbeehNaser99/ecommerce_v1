@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { UserContext } from '../context/User';
 import './user.css'
+import { Link, Outlet } from 'react-router-dom';
 function User() {
     let {userData,loader} = useContext(UserContext);
     if(loader){
@@ -9,15 +10,19 @@ function User() {
       )
     }
   return (
-    <div className='container mt-5'>
+    <aside className='profile'>
       
-       <img  className='userProfile' srcSet={userData.image.secure_url} />
-       <div className='username mt-5'>
-        <p><span className='name'>Name is :</span> {userData.userName} </p>
-        <p><span className='name'>Email is :</span> {userData.email} </p>
-        <p><span className='name'>Created At :</span> {userData.createdAt} </p>
-       </div>
-    </div>
+      <div className='profileLinks'>
+      <nav>
+        <Link to={'info'}><img src='profile/project.png' alt='info'className='imgBar'/>Information</Link>
+        <Link to={'contact'}><img src='profile/email.png' alt='contact'className='imgBar'/>Contact</Link>
+        <Link to={'getorder'}><img src='profile/booking.png' alt='order' className='imgBar'/>Orders</Link>
+      </nav>
+      </div>
+      <div className='userData w-100'>
+        <Outlet/>
+      </div>
+    </aside>
   )
 }
 

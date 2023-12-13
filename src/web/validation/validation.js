@@ -14,5 +14,10 @@ export const sendCodeSchema=yup.object({
 export const forgetSchema=yup.object({
     email:yup.string().required("email is reqierd").email(),
     password:yup.string().required("password is requierd").min(3,"must be 3 character").max(30,"must be 30 character"),
-    code:yup.string().required("email is reqierd").min(4,"must be 3 character").max(4,"must be 3 character"),
+    code:yup.string().required("email is reqierd").length(4),
+})
+export const orderSchema=yup.object({
+    address:yup.string().required("address is reqierd"),
+    phone:yup.number().required("phone is requierd").min(9,"must be 9 character").max(15,"must be 15 character"),
+    couponName:yup.string().length(5),
 })

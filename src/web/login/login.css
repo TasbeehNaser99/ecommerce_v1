@@ -1,0 +1,33 @@
+.bg-cover{
+    background-image: url('./../../../public/Cover.PNG');
+    background-size: cover;
+    height: 100vh;
+}
+.login-cart{
+    background-color: #dedede;
+    width: 600px;
+    height: 70vh;
+   border: 1px solid #000;
+   border-radius: 20px;
+
+}
+.login-h2{
+    
+    padding-top: 20px;
+}
+h1{
+    font-family: 'Sonsie One';
+    margin-left: 40%;
+    padding-top: 3%;
+}
+.login-container{
+    padding-block: 7%;
+}
+.submit{
+    margin-left: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    padding-inline: 8px;
+    font-family: 'Rum Raisin';
+}

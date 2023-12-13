@@ -26,29 +26,29 @@ function Navbar() {
  
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-transparent pt-1">
     <div className="container">
-    <a className="navbar-brand" href="#">T-shop</a>
+      
+    <img src='navbar/hanger.png' className='w-15' /> 
+    <a className="navbar-brand" href="#"><span>Tasbeeh Shope</span></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <div className="collapse navbar-collapse " id="navbarSupportedContent">
       <ul className="navbar-nav m-auto mb-2 mb-lg-0">
        
         <li className="nav-item">
-          <Link className="nav-link" to="/">Home</Link>
-        </li>
-
-
-        <li className="nav-item">
-          <a className="nav-link" href="#">Categories</a>
+          <Link className="nav-link" to="/"><span className='spanav'>Home</span></Link>
         </li>
         <li className="nav-item">
-        <a className="nav-link" href="#" onClick={getCart}>Products<p></p></a>
+          <a className="nav-link" href="#"><span className='spanav'>Categories</span></a>
+        </li>
+        <li className="nav-item">
+        <a className="nav-link" href="#" onClick={getCart}><span className='spanav'>Products</span></a>
       </li>
       {userToken?
        <li className="nav-item">
-        <Link className="nav-link position-relative" to={'/cart'}>Cart<span className='cardNum'>{cartNum}</span></Link>
+        <Link className="nav-link position-relative" to={'/cart'}><img src='navbar/shopping-cart.png' className='navIcon'/><span className='cardNum'>{cartNum}</span></Link>
       </li>:null}
     
 
@@ -57,7 +57,7 @@ function Navbar() {
       <li className="nav-item dropdown">
       <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     {userData!=null&& <img className='navbarProfile' srcSet={userData.image.secure_url} />} 
-       {userData!=null ? userData.userName :'Account'}
+       {userData!=null ?<span className='spanav'>{userData.userName}</span>  :<span className='spanav'> <img src='navbar/user.png' className='navIcon s1'/>Account</span>}
       </a>
       <ul className="dropdown-menu ">
       {userToken==null?

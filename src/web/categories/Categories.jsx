@@ -19,11 +19,11 @@ function Categories() {
       }
       const {data,isLoading}=useQuery('web_categories',getCategories);
       if(isLoading){
-      return <h2>Loading ...</h2>
+      return  <h1>Loading...</h1>
       }
   return (
   
-    <div className='container mt-5'>
+    <div className='container swiper-container  '>
       {/* <div className='row'>
         {
           data?.categories.length?data?.categories.map((category)=>

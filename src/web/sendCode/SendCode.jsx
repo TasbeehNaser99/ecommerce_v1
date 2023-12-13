@@ -4,6 +4,7 @@ import { useFormik } from 'formik'
 import { loginSchema, sendCodeSchema } from '../validation/validation.js';
 import { toast } from 'react-toastify';
 import axios from 'axios';
+import './sendCode.css'
 import { Link, useNavigate} from 'react-router-dom';
 
 function SendCode() {
@@ -49,14 +50,17 @@ const renderInput = inputs.map((input, index) => (
 ));
   return (
    <>
-   <div className='container'>
-    <h2>Send Code</h2>
+   <div className='bg-cover'>
+   <div className='container sendCode-container  w-50  rounded-3 mx-3'>
+   <div className='sendcode-cart'>
+    <h2 className='login-h2 text-center'>Send Code</h2>
     <form onSubmit={formik.handleSubmit}>
     {renderInput}
-    <button type='submit' onClick={()=>onSubmit(formik.values.email)} >Send Code</button>
+    <button type='submit' className='submit' onClick={()=>onSubmit(formik.values.email)} >Send Code</button>
     
     </form>
-    
+    </div>
+    </div>
    </div>
    </> 
   )

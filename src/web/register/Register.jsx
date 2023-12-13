@@ -4,6 +4,7 @@ import { useFormik } from 'formik'
 import { registerSchema } from '../validation/validation.js';
 import { toast } from 'react-toastify';
 import axios from 'axios';
+import './register.css'
 function Register() {
     const initialValues={
         userName:'',
@@ -91,13 +92,16 @@ const renderInput = inputs.map((input, index) => (
 ));
   return (
    <>
-   <div className='container'>
-    <h2>create account</h2>
+   <div className='bg-cover'>
+   <div className='container register-container  w-50  rounded-3 mx-3'>
+   <div className='register-cart'>
+    <h2 className='login-h2 text-center'>create account</h2>
     <form onSubmit={formik.handleSubmit} encType='multipart/form-data'>
     {renderInput}
-    <button type='submit' disabled={!formik.isValid}>Submit</button>
+    <button type='submit' className='submit' disabled={!formik.isValid}>Submit</button>
     </form>
-    
+    </div>
+   </div>
    </div>
    </> 
   )

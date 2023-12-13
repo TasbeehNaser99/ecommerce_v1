@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserContext } from '../context/User.jsx';
+import './login.css'
 function Login() {
   let {userToken,setUserToken}=useContext(UserContext)
     const navigate=useNavigate();
@@ -76,14 +77,17 @@ const renderInput = inputs.map((input, index) => (
 ));
   return (
    <>
-   <div className='container'>
-    <h2>login</h2>
+   <div className='bg-cover'>
+   <div className='container login-container  w-50  rounded-3 mx-3'>
+    <div className='login-cart'>
+    <h2 className='login-h2 text-center'>login</h2>
     <form onSubmit={formik.handleSubmit}>
     {renderInput}
-    <button type='submit' disabled={!formik.isValid}>login</button>
+    <button type='submit' className='submit' disabled={!formik.isValid}>login</button>
     <Link className='ms-3' to={'/sendCode'}>forgetPassword?</Link>
     </form>
-    
+    </div>
+   </div>
    </div>
    </> 
   )

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+.form{
+    width: 90%;
+    margin-left: 20px;
+}
+.form-label{
+    font-family: 'Rum Raisin';
+    font-size: 20px;
+}
+.form-control{
+    border: 1px solid #000 !important;
+}
