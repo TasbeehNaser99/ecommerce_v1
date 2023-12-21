@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './cart.css'
 import { CartContext } from '../context/Cart';
 import { useQueries, useQuery } from 'react-query';
@@ -6,30 +6,34 @@ import { Link } from 'react-router-dom';
 function Cart() {
     const {getCartContext,removeItemContext,clearAllCart}=useContext(CartContext);
     let {cartNum,increaseQtyContext,decreaseQtyContext} = useContext(CartContext);
-  
+   const[qty,setQty]=useState();
+   
     let [finalTotal,setFinalTotal]=useState(0);
     const getCart=async()=>{
         const res= await getCartContext()
         return res;
     }
+
     const {data,isLoading}=useQuery("getCart",getCart);
- const  getqty=(props)=>{
-     const res=getQty(props)
- }
+
   const removeItem= async(productId)=>{
     const res= await removeItemContext(productId);
+    window.location.reload();
      return res;
   }
   const clearAll =async()=>{
     const res=await clearAllCart();
+    window.location.reload();
     return res;
   } 
-  const increaseQty=async(productId)=>{
+  const increaseQty=async(productId,value)=>{
     const res=await increaseQtyContext(productId);
+    window.location.reload();
     return res;
   }
-  const decreaseQty=async(productId)=>{
+  const decreaseQty=async(productId,value)=>{
     const res=await decreaseQtyContext(productId);
+    window.location.reload();
     return res;
   }
   if(isLoading){
@@ -40,13 +44,16 @@ function Cart() {
   const setfinalTotal=(props)=>{
     finalTotal+=props;
   }
+  // useEffect(()=>{
+  //   getCart()
+  // },[qty])
   return (
-    <div className="cart">
+    <div className="cart ">
     <div className="container">
       <div className="row">
-        <div className="cart-items">
+        <div className="cart-items ">
           <div className="products" id="products">
-            <div className="item">
+            <div className="item item0 mt-5 me-3">
               <div className="product-info">
                 <h2>Product</h2>
               </div>
@@ -61,7 +68,7 @@ function Cart() {
               </div>
             </div>
             
-        { data?.products?(data.products.map((product)=>
+            { data?.products?(data.products.map((product)=>
              <div className="item" key={product._id}>
              <div className="product-info">
                <img src={product.details.mainImage.secure_url} />
@@ -89,7 +96,7 @@ function Cart() {
                </div>
              </div>
              <div className="quantity">
-               <button onClick={()=>decreaseQty(product.details._id)}>
+               <button onClick={()=>decreaseQty(product.details._id,product.quantity)}>
                  <svg
                    xmlns="http://www.w3.org/2000/svg"
                    width={16}
@@ -106,9 +113,10 @@ function Cart() {
                    />
                  </svg>
                </button>
+               
                <span>{product.quantity}</span>
                
-               <button onClick={()=>increaseQty(product.details._id)}>
+               <button onClick={()=>increaseQty(product.details._id,product.quantity)}>
                  <svg
                    xmlns="http://www.w3.org/2000/svg"
                    width={16}

@@ -41,9 +41,7 @@ function Register() {
     });
     
     const handleFileChange=(event)=>{
-        formik.setFieldValue('image',event.target.files[0]);
-    
-       
+        formik.setFieldValue('image',event.target.files[0]); 
     }
     const inputs = [
       {
@@ -52,6 +50,7 @@ function Register() {
         name: "userName",
         title: "user name",
         value: formik.values.userName,
+        className:'form-control0',
       },
       {
         id: "email",
@@ -59,6 +58,7 @@ function Register() {
         name: "email",
         title: "user email",
         value: formik.values.email,
+        className:'form-control0',
       },
       {
         id: "password",
@@ -66,6 +66,7 @@ function Register() {
         name: "password",
         title: "user password",
         value: formik.values.password,
+        className:'form-control0',
       },
       {
         id:'image',
@@ -87,22 +88,27 @@ const renderInput = inputs.map((input, index) => (
     key={index}
     onChange={input.onChange||formik.handleChange}
     errors={formik.errors}
-
+    className={input.className}
   />
 ));
   return (
    <>
-   <div className='bg-cover'>
-   <div className='container register-container  w-50  rounded-3 mx-3'>
-   <div className='register-cart'>
+   <div className='container register-container  w-90 py-5  rounded-3 mx-3'>
+   <div className='row justify-content-center pb-5 align-items-center all'>
+        <div className='col-md-5'>
+          <img src='login1.PNG' className='w-90'/>
+          </div>
+          <div className='col-md-4 '>
     <h2 className='login-h2 text-center'>create account</h2>
     <form onSubmit={formik.handleSubmit} encType='multipart/form-data'>
     {renderInput}
     <button type='submit' className='submit' disabled={!formik.isValid}>Submit</button>
     </form>
     </div>
+    </div>
+  
    </div>
-   </div>
+   
    </> 
   )
 }

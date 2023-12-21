@@ -1,8 +1,9 @@
 .userProfile{
     width: 200px;
     height: 200px;
-    border-radius: 10px;
-    border: 1px solid #000;
+    border-radius: 50%;
+    border: 2px solid #F6BC3E;
+    margin-left:40%;
 }
 .name{
     color: red;
@@ -22,10 +23,13 @@
     gap: 40px;
     height: 90vh;
 }
+.userName{
+    margin-left: 40%;
+    margin-top: 2%;
+}
 .profileLinks {
-    background-color: rgb(112, 204, 244);
+    background-color: #F6BC3E;
     height: calc(100vh-65px);
-    border-radius: 20px;
     border: 1px solid #000;
 }
 .profileLinks nav a{
@@ -45,4 +49,30 @@
    
     flex-direction: column;
     gap: 60px;
+}
+.table{
+    overflow-y:scroll;
+    display: block;
+    height:85vh;
+    width: 55% !important;
+    
+   
+}
+td{
+    text-align: center;
+    /* padding: 15px !important; */
+   
+}
+.user-contact,.user-info,.user-order{
+    border: 3px solid #F6BC3E;
+    height: 89vh;
+}
+.status{
+     /* background-color: #F6BC3E !important; */
+    /* border-radius: 50px; 
+    font-size: 12px; */
+    /* color: #fff !important; */
+}
+.xMark{
+    color: #ff0302;;
 }

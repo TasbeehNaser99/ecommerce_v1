@@ -5,6 +5,7 @@ import { useFormik } from 'formik'
 import { orderSchema } from '../validation/validation.js';
 import { toast } from 'react-toastify';
 import axios from 'axios';
+import './order.css'
 import { Navigate, useNavigate } from 'react-router-dom';
 function Order() {
   const initialValues = {
@@ -47,21 +48,24 @@ const navigate=useNavigate();
       id: "address",
       type: "text",
       name: "address",
-      title: "address",
+      title: "",
+      placeholder :'address',
       value: formik.values.address,
     },
     {
       id: "phone",
       type: "number",
       name: "phone",
-      title: "phone",
+      title: "",
+      placeholder:'phone',
       value: formik.values.phone,
     },
     {
         id: "couponName",
         type: "text",
         name: "couponName",
-        title: "Have a coupon ?",
+        title: "",
+        placeholder:'Have a coupon ?',
         value: formik.values.couponName,
       },
   ];
@@ -69,6 +73,7 @@ const navigate=useNavigate();
   const renderInput = inputs.map((input, index) => (
     <Input
       type={input.type}
+      placeholder={input.placeholder}
       id={input.id}
       name={input.name}
       title={input.title}
@@ -81,25 +86,34 @@ const navigate=useNavigate();
   ));
   return (
     <>
-      <div className="container">
-      <h1>Or <img src='cargo.png'/>der</h1>
+    <div className='order'>
+      <div className="container ">
+      
         <div className="row">
         
       <Cart />
-          <div className="container login-container  w-50  rounded-3 mt-0 pt-0">
+          <div className="container login-container  w-75  rounded-3 mt-0 pt-0">
+          <div className='row justify-content-center align-items-center all py-3'>
+        <div className='col-md-5'>
+          <img src='login1.PNG' className='w-90'/>
+          </div>
+          <div className='col-md-4 '>
+            <h2 className="login-h2 text-center">Or <img src='cargo.png' className='cargo'/>der</h2>
             <form onSubmit={formik.handleSubmit}>
               {renderInput}
               <button
                 type="submit"
-                className="submit"
-                // disabled={!formik.isValid}
+                className="submit btn btn-outline-primary"
                 onClick={()=>onSubmit(formik.values)}
               >
                 Order Now
               </button>
             </form>
           </div>
+          </div>
         </div>
+        </div>
+      </div>
       </div>
     </>
   );

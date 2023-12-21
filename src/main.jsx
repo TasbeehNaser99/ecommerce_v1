@@ -9,7 +9,9 @@ import { ToastContainer } from 'react-toastify';
 import { QueryClient, QueryClientProvider } from "react-query";
 import UserContextProvider from './web/context/User.jsx';
 import { CartContextProvider } from './web/context/Cart.jsx';
-import OrderContextProvider from './web/context/Order.jsx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
 
 const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById('root')).render(

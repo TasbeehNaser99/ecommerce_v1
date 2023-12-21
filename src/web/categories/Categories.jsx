@@ -14,7 +14,8 @@ import { Link } from 'react-router-dom';
 function Categories() {
   const getCategories= async()=>{
     const {data}=await axios.get(`${import.meta.env.VITE_API_URL}/categories/active?limit=7`)
-  return data;
+    console.log(data)
+    return data;
 
       }
       const {data,isLoading}=useQuery('web_categories',getCategories);
@@ -22,18 +23,9 @@ function Categories() {
       return  <h1>Loading...</h1>
       }
   return (
-  
+  <div className='container0 pt-5'>
     <div className='container swiper-container  '>
-      {/* <div className='row'>
-        {
-          data?.categories.length?data?.categories.map((category)=>
-          <div className='col-md-4' key={category._id}>
-            <img src={category.image.secure_url}/>
-            <h2>{category.name}</h2>
-          </div>
-          ):'<h2>no category found</h2>'
-        }
-      </div> */}
+      <h2><strong>Categories</strong></h2>
       <Swiper
       modules={[Navigation, Pagination, Autoplay]}
       spaceBetween={50}
@@ -54,12 +46,13 @@ function Categories() {
           data?.categories.length?data?.categories.map((category)=>
       <SwiperSlide key={category._id}> 
       <Link to={`/product/category/${category._id}`}>
-      <img src={category.image.secure_url}/>
+      <img src={category.image.secure_url} className='swiper-image'  />
       </Link>
       </SwiperSlide>
       ):'<h2>no category found</h2>'  
       }
     </Swiper>
+    </div>
     </div>
   )
 }

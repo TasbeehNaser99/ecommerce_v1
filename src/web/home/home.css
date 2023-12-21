@@ -1,0 +1,17 @@
+.imgHome{
+    border: 1px solid #bab3b3 ;
+}
+.overlay{
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    top: 5%;
+    left: 10%;
+    overflow-x: hidden;
+}
+.images .col-md-3{
+    position: relative;
+}
+.homeContent{
+    overflow-x: hidden;
+}

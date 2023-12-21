@@ -11,8 +11,8 @@ function UserInfo() {
     }
   return (
      <div className='user-info'>
-        <img  className='userProfile' src={userData.image.secure_url} alt='profileImg'/>
-        <h2>{userData.userName}</h2>
+        <img  className='userProfile mt-2' src={userData.image.secure_url} alt='profileImg'/>
+        <h2 className='userName'><span className='text-warning'>Name : </span> {userData.userName}</h2>
       </div> 
   )
 }

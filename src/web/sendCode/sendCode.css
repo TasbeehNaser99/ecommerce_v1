@@ -1,10 +1,8 @@
-.sendcode-cart{
-    background-color: #dedede;
-    width: 600px;
-    height: 50vh;
-   border: 1px solid #000;
-   border-radius: 20px; 
-}
+
 .sendCode-container{
-    padding-block: 13.5%;
+    padding-block: 10%;
+}
+.all0{
+    margin-left: 30% !important;
+   background-color:  #000 ;
 }

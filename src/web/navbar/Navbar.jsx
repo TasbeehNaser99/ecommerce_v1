@@ -22,15 +22,13 @@ function Navbar() {
   };
   const { data, isLoading } = useQuery("getCart", getCart);
   
-  
+  //bg-transparent
  
 
   return (
-    <nav className="navbar navbar-expand-lg bg-transparent pt-1">
+    <nav className="navbar navbar-expand-lg pt-1 w-100 ">
     <div className="container">
-      
-    <img src='navbar/hanger.png' className='w-15' /> 
-    <a className="navbar-brand" href="#"><span>Tasbeeh Shope</span></a>
+    <a className="navbar-brand" href="#"><span><img src='logoNav.PNG' className='logoNav'/></span></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
@@ -44,7 +42,11 @@ function Navbar() {
           <a className="nav-link" href="#"><span className='spanav'>Categories</span></a>
         </li>
         <li className="nav-item">
-        <a className="nav-link" href="#" onClick={getCart}><span className='spanav'>Products</span></a>
+        <Link className="nav-link" to={{
+        pathname: '/products',
+        search: '?page=1',
+      }}
+ onClick={getCart}><span className='spanav'>Products</span></Link>
       </li>
       {userToken?
        <li className="nav-item">
@@ -57,7 +59,7 @@ function Navbar() {
       <li className="nav-item dropdown">
       <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     {userData!=null&& <img className='navbarProfile' srcSet={userData.image.secure_url} />} 
-       {userData!=null ?<span className='spanav'>{userData.userName}</span>  :<span className='spanav'> <img src='navbar/user.png' className='navIcon s1'/>Account</span>}
+       {userData!=null ?<span className='spanav'>{userData.userName}</span>  :<span className='spanav'> <img src='navbar/user.png' className='navIcon s1 d-inline'/>Account</span>}
       </a>
       <ul className="dropdown-menu ">
       {userToken==null?

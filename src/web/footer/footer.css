@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600&family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;700&family=Alegreya:wght@400;600&family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+a{
+    text-decoration: none !important;
+    color: white;
+}
+ul {
+    list-style: none;
+}
+.contact{
+    color: rgba(255, 255, 255, 0.744);
+    background-color:#353330;
+}
+.contact h3 {
+    font-family: "Alegreya";
+    font-weight: lighter;
+    padding-bottom: 20px;
+    font-size: 18.72px
+}
+.contact p,
+.contact a,
+.contact span,
+.useful-links i {
+    font-family: "Alegreya Sans";
+    color: #f8f8f876;
+}
+.useful-link li a:hover ,.contact-details0 li a:hover{
+ color: #fff;
+ font-weight: 400;
+}
+.contact p {
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+.list-links .li{
+    border-bottom: 1px solid #fcfcfc0b;
+    padding: 6px; 
+}
+.list-links li{
+    padding: 6px; 
+}
+.useful-link li,
+.opening-hours li {
+    padding-bottom: 15px;
+}
+
+.contact-details0 li {
+    padding-bottom: 10px;
+}

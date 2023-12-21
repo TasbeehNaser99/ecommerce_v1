@@ -50,9 +50,13 @@ const renderInput = inputs.map((input, index) => (
 ));
   return (
    <>
-   <div className='bg-cover'>
-   <div className='container sendCode-container  w-50  rounded-3 mx-3'>
-   <div className='sendcode-cart'>
+
+   <div className='container sendCode-container  w-75  rounded-3 mx-3 '>
+   <div className='row justify-content-center align-items-center all all0'>
+        <div className='col-md-5'>
+          <img src='login1.PNG' className='w-90'/>
+          </div>
+          <div className='col-md-4 '>
     <h2 className='login-h2 text-center'>Send Code</h2>
     <form onSubmit={formik.handleSubmit}>
     {renderInput}
@@ -60,7 +64,7 @@ const renderInput = inputs.map((input, index) => (
     
     </form>
     </div>
-    </div>
+  </div>  
    </div>
    </> 
   )

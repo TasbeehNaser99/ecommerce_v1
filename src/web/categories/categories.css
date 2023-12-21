@@ -1,7 +1,6 @@
-img{
-    height: 100px;
-    width: 80px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400&display=swap');
 .swiper-button-prev,.swiper-button-next{
     height: 30px;
     width: 30px;
@@ -10,12 +9,15 @@ img{
     background: #fff;
    
 }
+.swiper-image{
+    width: 80%;
+}
 .swiper-button-prev:after,.swiper-button-next:after{
     font-size: 20px;
 }
 .swiper-pagination-clickable{
     position: absolute;
-    top: 125px !important;
+    top: 270px !important;
 }
 .swiper{
 position: relative;
@@ -23,10 +25,44 @@ margin-block: 30px;
 padding-block: 30px;
 
 }
-.swiper-container{
-    background-color: rgba(251, 163, 163, 0.888);  
+.container0{
     border-radius: 15px; 
 }
 .swiper-pagination-bullet-active{
     background: #fff;
+    border: 1px solid #000;
+}
+.productCategory{
+    height: 400px;
+    width: 300px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 10px 10px #a5c8f5;
+}
+.productName{
+ padding-top: 20px;
+font-size: 16px;
+font-family: DM Sans;
+ color: rgb(114, 128, 222)
+}
+.pece{
+    padding: 20px;
+   border-radius: 30px;
+
+}
+.pe-7{
+    padding-right: 40%;
+}
+.star{
+    color:#F6BC3E;
+}
+.detail{
+    background-color: #56c2f7 !important;
+    border: 1px solid #000 !important;
+    border-radius: 30px !important;
+  
+    padding: 5px;
+}
+.detail a{
+    color: #000 !important;
 }

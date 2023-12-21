@@ -20,6 +20,8 @@ import Order from './order/Order.jsx';
 import UserInfo from './user/UserInfo.jsx';
 import UserContact from './user/UserContact.jsx';
 import UserOrders from './user/UserOrders';
+import ProductsPage from './products/ProductsPage.jsx';
+import Review from './review/Review.jsx';
 
 
 
@@ -88,8 +90,16 @@ export const router = createBrowserRouter([
         element:<CategoriesDetails/>
       },
       {
+        path:"product/:id/review",
+        element:<Review/>
+      },
+      {
         path:"product/:productId",
         element:<Products/>
+      },
+      { path: '/products',
+      search: '?page=:page',
+        element:<ProductsPage/>
       },
       {
         path:"cart",

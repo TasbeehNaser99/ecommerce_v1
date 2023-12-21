@@ -10,7 +10,7 @@ function UserContact() {
     }
   return (
       <div className='user-contact'>
-         <a>{userData.email}</a>
+      <div className='ms-3 mt-3'><span className='text-warning'>Email : </span><a href='#'>{userData.email}</a></div>   
          <p>{userData.phone}</p>
       </div>
   )

@@ -1,9 +1,14 @@
 .register-cart{
-    background-color: #dedede;
-    width: 600px;
+    /* background-color: #ab82a65d;
+    margin-left: 120%;
+    width: 450px;
     height: 90vh;
    border: 1px solid #000;
-   border-radius: 20px;
+   border-radius: 20px; */
+   margin-left: 100%;  
+   width: 400px;
+   height: 70vh; 
+  border-radius: 20px;  
 }
 .register-container{
     padding-top: 3%;

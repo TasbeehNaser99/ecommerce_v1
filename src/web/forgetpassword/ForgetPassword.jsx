@@ -67,17 +67,23 @@
   ));
     return (
      <>
-     <div className='bg-cover'>
-     <div className='container login-container  w-50  rounded-3 mx-3'>
-     <div className='forgetPassword-cart'>
+    
+     <div className='container login-container  w-100  rounded-3 mx-3'>
+     <div className='row justify-content-center py-5 align-items-center all all1'>
+        <div className='col-md-5'>
+          <img src='login1.PNG' className='w-90'/>
+          </div>
+          <div className='col-md-4 '>
+    
       <h2 className='login-h2 text-center'>Forget Password</h2>
       <form onSubmit={formik.handleSubmit}>
       {renderInput}
       <button type='submit' className='submit' onClick={()=>onSubmit(formik.values)}>submit</button>
       </form>
       </div> 
-     </div>
-     </div>
+    </div>
+    </div>
+     
      </> 
     )
   }

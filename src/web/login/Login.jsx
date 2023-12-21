@@ -7,6 +7,8 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserContext } from '../context/User.jsx';
 import './login.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons';
 function Login() {
   let {userToken,setUserToken}=useContext(UserContext)
     const navigate=useNavigate();
@@ -49,48 +51,74 @@ function Login() {
         id: "email",
         type: "email",
         name: "email",
-        title: "user email",
+        title: "",
+        icon:{faUser},
+        placeholder:`your Email` ,
         value: formik.values.email,
+        className:'form-control0',
       },
       {
         id: "password",
         type: "password",
         name: "password",
-        title: "user password",
+        title: "",
+        icon:{faEnvelope},
+        placeholder:"password",
         value: formik.values.password,
+        className:'form-control0',
       },
     ];
-   
+  
 const renderInput = inputs.map((input, index) => (
   <Input
     type={input.type}
     id={input.id}
     name={input.name}
     title={input.title}
+    icon={input.icon}
+    placeholder={input.placeholder}
     touched={formik.touched}
     onBlur={formik.handleBlur}
     key={index}
     onChange={formik.handleChange}
     errors={formik.errors}
-
+    className={input.className}
   />
 ));
   return (
-   <>
-   <div className='bg-cover'>
-   <div className='container login-container  w-50  rounded-3 mx-3'>
-    <div className='login-cart'>
-    <h2 className='login-h2 text-center'>login</h2>
-    <form onSubmit={formik.handleSubmit}>
-    {renderInput}
-    <button type='submit' className='submit' disabled={!formik.isValid}>login</button>
-    <Link className='ms-3' to={'/sendCode'}>forgetPassword?</Link>
-    </form>
+    <div className='content0'>
+      <div className="container login-container   rounded-3 mx-3">
+        <div className='row justify-content-center align-items-center all'>
+        <div className='col-md-5'>
+          <img src='login1.PNG' className='w-90'/>
+          </div>
+          <div className='col-md-4 '>
+            <h2 className="login-h2 text-center">login</h2>
+            <form onSubmit={formik.handleSubmit}>
+              {renderInput}
+              <div>
+              <Link className="ms-3 me-5" to={"/sendCode"}>
+                forgetPassword?
+              </Link>
+              <Link className="ms-5" to={"/register"}>
+                Sign Up
+              </Link>
+              </div> 
+              <button
+                type="submit"
+                className="submit text-white w-25 bg-primary"
+                disabled={!formik.isValid}
+              >
+                login
+              </button>
+             
+            </form>
+            </div>
+      
+        </div>
+      </div>
     </div>
-   </div>
-   </div>
-   </> 
-  )
+  );
 }
 
 export default Login
