@@ -86,7 +86,7 @@ function Products() {
             <span className="pe-3">
               <strong>Price:</strong> ${data.finalPrice}
             </span>
-            <p className="mt-3">
+            <p className="mt-3 Description">
               <strong>Description:</strong> {data.description}
             </p>
             <button

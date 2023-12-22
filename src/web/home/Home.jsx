@@ -71,181 +71,182 @@ function Home() {
   </div>
 </div>
 </div>
-<section className='ProductHome'>
+<section>
   <div className='container'>
-  <h2 className='h2Home'>PRODUCT OVERVIEW</h2>
-<div>
-  <ul className="nav nav-tabs" id="myTab" role="tablist">
-    <li className="nav-item" role="presentation">
-      <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">All Products</button>
-    </li>
-    <li className="nav-item" role="presentation">
-      <button className="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Women</button>
-    </li>
-    <li className="nav-item" role="presentation">
-      <button className="nav-link" id="men-tab" data-bs-toggle="tab" data-bs-target="#men" type="button" role="tab" aria-controls="men" aria-selected="false">Men</button>
-    </li>
-    <li className="nav-item" role="presentation">
-      <button className="nav-link" id="shoes-tab" data-bs-toggle="tab" data-bs-target="#shoes" type="button" role="tab" aria-controls="shoes" aria-selected="false">Shoes</button>
-    </li>
-    <li className="nav-item" role="presentation">
-      <button className="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Watches</button>
-    </li>
-  </ul>
-  <div className="tab-content" id="myTabContent">
-    <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-      <div classname="row py-5">
-        <div classname="col-md-3 pt-3">
-          <img src="item-Home/product-01.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
+  <h2 className="h2Home">PRODUCT OVERVIEW</h2>
+  <div>
+
+      <ul className="nav nav-tabs" id="myTab" role="tablist">
+        <li className="nav-item" role="presentation">
+          <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">All Products</button>
+        </li>
+        <li className="nav-item" role="presentation">
+          <button className="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Women</button>
+        </li>
+        <li className="nav-item" role="presentation">
+          <button className="nav-link" id="men-tab" data-bs-toggle="tab" data-bs-target="#men" type="button" role="tab" aria-controls="men" aria-selected="false">Men</button>
+        </li>
+        <li className="nav-item" role="presentation">
+          <button className="nav-link" id="shoes-tab" data-bs-toggle="tab" data-bs-target="#shoes" type="button" role="tab" aria-controls="shoes" aria-selected="false">Shoes</button>
+        </li>
+        <li className="nav-item" role="presentation">
+          <button className="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Watches</button>
+        </li>
+      </ul>
+      <div className="tab-content" id="myTabContent">
+        <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div className="row py-5">
+            <div className="col-md-3 pt-3">
+              <img src="item-Home/product-01.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-02.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-03.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-04.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-05.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-06.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-07.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-08.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-09.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-10.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-11.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-12.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-13.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-14.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-15.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-16.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+          </div>
         </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-02.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
+        <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div className="row py-5">
+            <div className="col-md-3 pt-3">
+              <img src="item-Home/product-01.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-02.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-04.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-05.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-07.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-08.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-10.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-13.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-14.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-16.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+          </div>
         </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-03.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
+        <div className="tab-pane fade" id="men" role="tabpanel" aria-labelledby="men-tab">
+          <div className="row py-5">
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-03.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-11.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-12.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+          </div>
         </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-04.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
+        <div className="tab-pane fade" id="shoes" role="tabpanel" aria-labelledby="shoes-tab">
+          <div className="row py-5">
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-09.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+          </div>
         </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-05.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-06.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-07.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-08.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-09.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-10.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-11.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-12.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-13.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-14.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-15.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-16.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
+        <div className="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div className="row py-5">
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-06.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+            <div className="col-md-3  pt-3">
+              <img src="item-Home/product-15.jpg" alt="product-01" className="itemProduct" />
+              <h5 className="h5Home">Esprit Ruffle Shirt</h5><span className="spanHome">$16.64</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <div classname="row py-5">
-        <div classname="col-md-3 pt-3">
-          <img src="item-Home/product-01.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-02.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-04.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-05.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-07.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-08.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-10.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-13.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-14.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-16.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-      </div>
-    </div>
-    <div className="tab-pane fade" id="men" role="tabpanel" aria-labelledby="men-tab">
-      <div classname="row py-5">
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-03.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-11.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-12.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-      </div>
-    </div>
-    <div className="tab-pane fade" id="shoes" role="tabpanel" aria-labelledby="shoes-tab">
-      <div classname="row py-5">
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-09.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-      </div>
-    </div>
-    <div className="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-      <div classname="row py-5">
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-06.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-        <div classname="col-md-3  pt-3">
-          <img src="item-Home/product-15.jpg" alt="product-01" classname="itemProduct" />
-          <h5 classname="h5Home">Esprit Ruffle Shirt</h5><span classname="spanHome">$16.64</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
+    
   </div>
 </section>
-
 
 </>
 

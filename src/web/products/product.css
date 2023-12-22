@@ -69,4 +69,8 @@
   width: 30% !important;
   height:40px !important;
 }
+.Description{
+  height: 160px;
+  overflow-y: scroll;
+}
 
