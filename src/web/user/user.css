@@ -5,8 +5,14 @@
     border: 2px solid #F6BC3E;
     margin-left:40%;
 }
+.faCircleInfo{
+    color:#F6BC3E ;
+}
 .name{
     color: red;
+}
+.bigContent{
+    overflow-x: hidden;
 }
 .username{
     border: 1px solid #000;
@@ -58,20 +64,18 @@
     
    
 }
+.imgDetails{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    border: 1px solid #F6BC3E;
+}
 td{
-    text-align: center;
-    /* padding: 15px !important; */
-   
+    text-align: center; 
 }
 .user-contact,.user-info,.user-order{
     border: 3px solid #F6BC3E;
     height: 89vh;
-}
-.status{
-     /* background-color: #F6BC3E !important; */
-    /* border-radius: 50px; 
-    font-size: 12px; */
-    /* color: #fff !important; */
 }
 .xMark{
     color: #ff0302;;
