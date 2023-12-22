@@ -8,7 +8,7 @@ import { render } from 'react-dom';
 
 function UserOrders() {
   const [details, setDetails] = useState();
-  // let Details=[];
+ 
   let { loader, userOrder } = useContext(OrderContext);
   const [loading, setloding] = useState(true);
   const cancel = async (id) => {
@@ -20,6 +20,7 @@ function UserOrders() {
         headers: { Authorization: `Tariq__${token}` },
       }
     );
+    window.location.reload();
     if (data.message == "success") {
       toast.success("order canceld successfully", {
         position: "top-center",
@@ -32,6 +33,8 @@ function UserOrders() {
         theme: "dark",
       });
     }
+   
+    
   };
   const getOrderDetails = (order) => {
     setDetails(order);
