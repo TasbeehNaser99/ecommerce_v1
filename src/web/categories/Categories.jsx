@@ -25,7 +25,7 @@ function Categories() {
   return (
   <div className='container0 pt-5'>
     <div className='container swiper-container  '>
-      <h2><strong>Categories</strong></h2>
+      <h2 className='h2Home'>Categories</h2>
       <Swiper
       modules={[Navigation, Pagination, Autoplay]}
       spaceBetween={50}

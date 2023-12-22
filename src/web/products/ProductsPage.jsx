@@ -89,16 +89,16 @@ function ProductsPage() {
               Search
             </button>
           </form>
-          <div class="dropdown-center">
+          <div className="dropdown-center">
             <button
-              class="btn btn-warning dropdown-toggle"
+              className="btn btn-warning dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
               Product classification
             </button>
-            <ul class="dropdown-menu">
+            <ul className="dropdown-menu">
               <li>
                 <form
                   className="d-flex w-75 mb-2"

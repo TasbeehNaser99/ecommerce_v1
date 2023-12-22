@@ -22,7 +22,7 @@ function Navbar() {
   };
   const { data, isLoading } = useQuery("getCart", getCart);
   
-  //bg-transparent
+
  
 
   return (
@@ -59,7 +59,7 @@ function Navbar() {
       <li className="nav-item dropdown">
       <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     {userData!=null&& <img className='navbarProfile' srcSet={userData.image.secure_url} />} 
-       {userData!=null ?<span className='spanav'>{userData.userName}</span>  :<span className='spanav'> <img src='navbar/user.png' className='navIcon s1 d-inline'/>Account</span>}
+       {userData!=null ?<span className='spanav'>{userData.userName}</span> :<span className='spanav'> <img src='navbar/user.png' className='navIcon s1 d-inline'/>Account</span>}
       </a>
       <ul className="dropdown-menu ">
       {userToken==null?
